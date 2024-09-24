@@ -1,0 +1,203 @@
+.navbar-brand img {
+    width: 50px; /* Adjust logo size */
+}
+.carousel-item {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+    z-index: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    margin: 10px 0;
+}
+#about-section {
+    padding: 60px 0;
+}
+.tab-content {
+    margin-top: 20px;
+}
+#services-section {
+    padding: 60px 0;
+}
+
+.service-box {
+    background-color: #f8f9fa; /* Light background for service boxes */
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.service-box i {
+    color: #007bff; /* Icon color */
+}
+#projects-section {
+    padding: 60px 0;
+}
+
+.project-box {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Set a fixed height */
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.up {
+    transform: translateY(-10px); /* Slightly raise the middle image */
+}
+
+.down {
+    transform: translateY(10px); /* Slightly lower the last image */
+}
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    color: #343a40;
+}
+
+.section-subheading {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.form-control {
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+/* Footer Styling */
+.footer-section {
+    background-color: #343a40;
+    color: #ddd;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.footer-section h5 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 0.95rem;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #f8f9fa;
+    text-decoration: underline;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #495057;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+/* Sticky Footer for Full Page Coverage */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #343a40;
+}
+
+@media (max-width: 768px) {
+    .footer-section h5 {
+        text-align: center;
+    }
+}
